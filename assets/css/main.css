@@ -14,7 +14,7 @@ a{text-decoration:none;}
 .column-right{float:left; width:48%; margin-left:2%;}
 
 /* header */
-header{padding-bottom:90px; overflow:hidden;}
+header{padding-bottom:40px; padding-top:40px; overflow:hidden;}
 header .container{margin-bottom:40px; overflow:visible;}
 header a.logo{display:block; background:url(../img/logo.PNG) center center no-repeat; text-indent:-99999px; width:262px; height:103px;}
 header ul.menu{margin-top:-64px;}
@@ -33,9 +33,14 @@ header ul.sub-menu-3{margin-left:140px; width:160px; top:0; margin-top:0; opacit
 header ul.sub-menu-3 li{padding-top:8px; padding-bottom:8px; padding-left:10px; font-size:13px;}
 
 /* banners */
-main .banners .slider{width:100%; height:100%; margin-bottom:80px;}
-main .banners .slider ul li{width:100%; height:100%;}
-main .banners .slider ul li img{display:block; width:100%; height:100%;}
+main .banners {width:100%; height:100%; margin-bottom:40px;}
+main .banners ul li{width:100%; height:100%;}
+main .banners ul li img{display:block; width:100%; height:100%;}
+
+/* override bxSlider */
+main .banners .bx-wrapper .bx-viewport{-moz-box-shadow: none; -webkit-box-shadow:none; box-shadow:none; left:0; border:none;}
+main .banners .bx-wrapper .bx-pager.bx-default-pager a{width:18px; height:18px; border-radius:50%; color:#7C7F80;}
+main .banners .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{background:#A3A5A6;}
 
 /* cursos */
 main .course-types{padding-left:35px; padding-right:35px;}
