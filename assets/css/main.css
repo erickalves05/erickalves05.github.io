@@ -14,7 +14,7 @@ a{text-decoration:none;}
 .column-right{float:left; width:48%; margin-left:2%;}
 
 /* header */
-header{padding-bottom:90px;}
+header{padding-bottom:90px; overflow:hidden;}
 header .container{margin-bottom:40px; overflow:visible;}
 header a.logo{display:block; background:url(../img/logo.PNG) center center no-repeat; text-indent:-99999px; width:262px; height:103px;}
 header ul.menu{margin-top:-64px;}
