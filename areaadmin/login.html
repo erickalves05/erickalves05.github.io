@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Área Administrativa</title>
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/area-admin.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="login-form">
+        <form action="/" method="post">
+            <div class="panel panel-primary login-form">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Login</h3>
+                </div>
+
+                <div id="alert_placeholder"></div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <section id="loginForm">
+                                <div class="form-horizontal">
+                                    <div id="msg-erro">
+                                        <p class="text-danger">
+                                            <label id="litMsgErro" />
+                                        </p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">E-mail</label>
+                                        <div class="col-md-10">
+                                            <input type="text" id="txtEmail" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Senha</label>
+                                        <div class="col-md-10">
+                                            <input type="password" id="txtSenha" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <a href="resetarsenha.aspx" title="Esqueci minha senha">Esqueci minha senha</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" id="btnLogin" value="Entrar" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="../assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/area-admin.js"></script>
+</body>
+</html>
