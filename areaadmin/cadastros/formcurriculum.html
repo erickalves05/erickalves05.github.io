@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cadastro de Curso</title>
+
+    <link href="../../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../assets/css/site.css" rel="stylesheet" />
+    <link href="../../assets/css/area-admin.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="float-left">
+                <a href="/" title="Unifafibe - Pós-Graduação" class="logo">Unifafibe - Pós-Graduação</a>
+            </h1>
+
+            <ul class="float-right menu clearfix">
+                <li>
+                    <a href="#" title="Cursos">Cadastros</a>
+                    <ul class="sub-menu clearfix">
+                        <li>
+                            <a href="formcurso.html">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="formusuario.html">Usuários</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <hr />
+
+    <form action="/" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Curriculum</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="form-group">
+                                        <label class="control-label">Nome Completo</label>
+                                        <input type="text" id="txtNome" class="form-control" />
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Idade</label>
+                                                <input type="text" id="txtIdade" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Estado Civil</label>
+                                                <select id="ddlAtivo" class="form-control">
+                                                    <option>Solteiro</option>
+                                                    <option>Casado</option>
+                                                    <option>Separado</option>
+                                                    <option>Divorciado</option>
+                                                    <option>Viúvo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">E-mail</label>
+                                        <input type="text" id="txtEmail" class="form-control" />
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Telefone Recidencial</label>
+                                                <input type="txtRecidencial" id="Text1" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Telefone Celular</label>
+                                                <input type="txtCelular" id="Text2" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Cidade</label>
+                                                 <input type="text" id="txtCidade" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="control-label"> Disponibilidade para mudar de cidade</label>
+                                                <select id="Select1" class="form-control">
+                                                    <option>Não</option>
+                                                    <option>Sim</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                    <fieldset> 
+                                        <legend> Formação Acadêmica</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="Text3" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtInicio1" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label"> Disponibilidade para mudar de cidade</label>
+                                                    <select id="Select2" class="form-control">
+                                                        <option>Tecnólogo</option>
+                                                        <option>Graduação</option>
+                                                        <option>Pós-Graduação</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Instituição</label>
+                                                     <input type="txtInstituicao" id="TxtTermino1" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Atuação </label>
+                                            <textarea id="txtInicio" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset> 
+                                        <legend> Formação Acadêmica</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="TxtInicio2" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtTermino5" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label"> Disponibilidade para mudar de cidade</label>
+                                                    <select id="Select3" class="form-control">
+                                                        <option>Tecnólogo</option>
+                                                        <option>Graduação</option>
+                                                        <option>Pós-Graduação</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Instituição</label>
+                                                     <input type="txtInstituicao" id="TxtInstituicao1" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Atuação </label>
+                                            <textarea id="Textarea4" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset> 
+                                        <legend> Formação Acadêmica</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="TxtInicio6" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtTermino6" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label"> Disponibilidade para mudar de cidade</label>
+                                                    <select id="Select4" class="form-control">
+                                                        <option>Tecnólogo</option>
+                                                        <option>Graduação</option>
+                                                        <option>Pós-Graduação</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Instituição</label>
+                                                     <input type="txtInstituicao" id="TxtInstituicao2" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Atuação </label>
+                                            <textarea id="Textarea5" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset> 
+                                        <legend>  1º Experiência Profissional</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="TxtInicio3" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtTermino2" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Setor</label>
+                                                     <input type="txtSetor" id="TxtSetor1" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Cargo</label>
+                                                     <input type="txtCargo" id="TxtCargo1" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Resumo das Atividades </label>
+                                            <textarea id="Textarea1" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                  </fieldset>
+
+                                    <fieldset> 
+                                        <legend>  2º Experiência Profissional</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="TxtInicio4" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtTermino3" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Setor</label>
+                                                     <input type="txtSetor" id="TxtSetor2" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Cargo</label>
+                                                     <input type="txtCargo" id="TxtCargo2" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Resumo das Atividades </label>
+                                            <textarea id="Textarea2" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                  </fieldset>
+
+                                    <fieldset> 
+                                        <legend>  3º Experiência Profissional</legend>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Inicio</label>
+                                                     <input type="txtInicio" id="TxtInicio5" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Ano de Término</label>
+                                                     <input type="txtTermino" id="TxtTermino4" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Setor</label>
+                                                     <input type="txtSetor" id="TxtSetor3" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Cargo</label>
+                                                     <input type="txtCargo" id="TxtCargo3" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                         
+                                       <div class="form-group">
+                                            <label class="control-label">Resumo das Atividades </label>
+                                            <textarea id="Textarea3" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                  </fieldset>
+                                    
+                                    <fieldset> 
+                                        <legend> Cursos, Seminários e Treinamentos</legend>                
+                                         <div class="form-group">
+                                            <label class="control-label">Resumo das Atividades </label>
+                                            <textarea id="txtCursos" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                  </fieldset>
+
+                                    <fieldset> 
+                                        <legend> Idiomas </legend>                
+                                         <div class="form-group">
+                                            <label class="control-label"> Liste o(s) idoma(s) e sua influência </label>
+                                             <br />
+                                             <label class="control-label"> Por exemplo: boa compreensão, fala, leitura, tradução e escrita </label>                                             
+                                            <textarea id="txtIdioma" rows="6" class=" form-control"></textarea>
+                                        </div>
+                                  </fieldset>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <input type="submit" id="btnSalvar" value="Salvar" class="btn btn-primary" />
+                            <input type="button" id="btnCancelar" value="Cancelar" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="../../assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/area-admin.js"></script>
+
+</body>
+</html>
